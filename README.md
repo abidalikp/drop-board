@@ -8,7 +8,7 @@
 
 ## Specifications
 
-1. Create Task: Users can add a new task with a title.
+1. Create Task: Users can add a new task with a title (save locally to browser).
 
 2. Delete Task: Users can remove tasks from any status column.
 

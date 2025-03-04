@@ -27,6 +27,7 @@ const CreateTask = ({ tasks, setTasks }: CreateTaskProps): ReactNode => {
       <form className="flex gap-4" onSubmit={handleSubmit}>
         <input
           className="border border-gray-500 shadow rounded-lg px-3"
+          placeholder="Learn React"
           type="text"
           id="taskName"
           name="taskName"
