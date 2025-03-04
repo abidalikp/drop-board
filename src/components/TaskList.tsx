@@ -26,7 +26,7 @@ const TaskList = ({ tasks, setTasks }: CreateTaskProps) => {
   };
 
   return (
-    <div className="flex flex-wrap gap-4 py-6">
+    <div className="flex flex-wrap justify-around gap-4 py-6">
       {statuses.map((status) => {
         const sectionTasks = [...tasks].filter(
           (task) => task.status === status

@@ -31,11 +31,11 @@ const Task = ({ task, onRemoveTask }: TaskProps) => {
   return (
     <div
       ref={ref}
-      className={`w-full flex group/item gap-2 justify-between items-center shadow hover:bg-gray-100 border border-gray-50 cursor-pointer px-4 py-2 rounded-lg ${
+      className={`flex group/item gap-2 justify-between items-center shadow hover:bg-gray-100 border border-gray-100 cursor-pointer px-4 py-2 rounded-lg ${
         isDragging ? "opacity-50" : ""
       }`}
     >
-      <div className="overflow-hidden">{task.name}</div>
+      <div className="overflow-hidden text-left">{task.name}</div>
       <div
         className={`group-hover/item:visible ${
           isTouchDevice ? "visible" : "invisible"

@@ -41,19 +41,19 @@ const Section = ({
   return (
     <div
       ref={ref}
-      className={`flex flex-col gap-4 p-2 rounded-lg ${
+      className={`flex flex-col gap-4 p-2 w-[322px] rounded-lg ${
         isOver ? "bg-gray-100" : ""
       }`}
     >
       <h1
-        className={`capitalize flex gap-2 w-[306px] bg-gray-500 text-white p-2 rounded-lg items-center justify-center ${statusStyle[status]}`}
+        className={`capitalize flex gap-2 bg-gray-500 text-white p-2 rounded-lg items-center justify-center ${statusStyle[status]}`}
       >
         {status}
         <div className="flex items-center justify-center w-6 h-6 bg-white text-black rounded-full">
           {tasks.length}
         </div>
       </h1>
-      <ul className="flex flex-col gap-2">
+      <ul className="flex flex-col gap-2 ">
         {tasks.map((task) => (
           <Task key={task.id} task={task} onRemoveTask={onRemoveTask} />
         ))}

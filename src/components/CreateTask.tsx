@@ -23,7 +23,7 @@ const CreateTask = ({ tasks, setTasks }: CreateTaskProps): ReactNode => {
   };
 
   return (
-    <div className="flex flex-col gap-4 p-2 w-fit">
+    <div className="flex flex-col gap-4 p-2 w-fit mx-auto">
       <form className="flex gap-4" onSubmit={handleSubmit}>
         <input
           className="border border-gray-500 shadow rounded-lg px-3"
