@@ -26,8 +26,8 @@ const CreateTask = ({ tasks, setTasks }: CreateTaskProps): ReactNode => {
     <div className="flex flex-col gap-4 p-2 w-fit mx-auto">
       <form className="flex gap-4" onSubmit={handleSubmit}>
         <input
-          className="border border-gray-500 shadow rounded-lg px-3"
-          placeholder="Learn React"
+          className="border text-primary border-primary shadow rounded-lg px-3"
+          placeholder="Learn Guitar"
           type="text"
           id="taskName"
           name="taskName"
@@ -35,7 +35,7 @@ const CreateTask = ({ tasks, setTasks }: CreateTaskProps): ReactNode => {
           onChange={(e) => setNewTask({ ...newTask, name: e.target.value })}
         />
         <button
-          className="border shadow border-gray-500 p-2 rounded-lg cursor-pointer hover:bg-gray-100"
+          className="border text-primary shadow shadow-tertiary border-primary p-2 rounded-lg cursor-pointer hover:bg-tertiary"
           type="submit"
         >
           Create

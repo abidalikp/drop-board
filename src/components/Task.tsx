@@ -31,7 +31,7 @@ const Task = ({ task, onRemoveTask }: TaskProps) => {
   return (
     <div
       ref={ref}
-      className={`flex group/item gap-2 justify-between items-center shadow hover:bg-gray-100 border border-gray-100 cursor-pointer px-4 py-2 rounded-lg ${
+      className={`flex group/item gap-2 justify-between text-primary items-center shadow shadow-shadow hover:bg-tertiary border border-tertiary cursor-pointer px-4 py-2 rounded-lg ${
         isDragging ? "opacity-50" : ""
       }`}
     >
