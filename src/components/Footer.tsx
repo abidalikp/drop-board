@@ -2,7 +2,7 @@ import ThemeToggle from "./ThemeToggle";
 
 const Footer = () => {
   return (
-    <footer className="p-4 border-t border-tertiary flex justify-between items-center">
+    <footer className="flex items-center justify-end gap-4 px-4 py-6 border-t inset-shadow-sm inset-shadow-shadow border-tertiary">
       <ThemeToggle />
     </footer>
   );

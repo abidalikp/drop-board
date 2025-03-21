@@ -7,6 +7,7 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { getLocalTasks } from "./helper";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   const [tasks, setTasks] = useState<ITask[]>([]);
@@ -19,9 +20,7 @@ function App() {
     <DndProvider backend={HTML5Backend}>
       <div className="flex flex-col w-full bg-secondary min-h-screen">
         <div className="flex-grow">
-          <div className="py-10 md:text-7xl text-7xl text-center font-semibold font-serif text-primary">
-            Drop Board
-          </div>
+          <Header />
           <CreateTask tasks={tasks} setTasks={setTasks} />
           <TaskList tasks={tasks} setTasks={setTasks} />
         </div>

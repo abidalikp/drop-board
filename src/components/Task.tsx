@@ -33,7 +33,7 @@ const Task = ({ task, onRemoveTask }: TaskProps) => {
       ref={ref}
       className={`flex group/item gap-2 justify-between text-primary items-center shadow shadow-shadow hover:bg-tertiary border border-tertiary cursor-pointer px-4 py-2 rounded-lg ${
         isDragging ? "opacity-50" : ""
-      }`}
+      } ${task.status === "completed" ? "line-through opacity-60" : ""}`}
     >
       <div className="overflow-hidden text-left">{task.name}</div>
       <div
