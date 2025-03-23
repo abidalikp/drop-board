@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        raw: "var(--raw)",
+        pure: "var(--pure)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         tertiary: "var(--tertiary)",

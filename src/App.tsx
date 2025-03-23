@@ -8,6 +8,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import { getLocalTasks } from "./helper";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import { Tooltip } from "react-tooltip";
 
 function App() {
   const [tasks, setTasks] = useState<ITask[]>([]);
@@ -19,6 +20,13 @@ function App() {
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="flex flex-col w-full bg-secondary min-h-screen">
+        <Tooltip
+          style={{
+            backgroundColor: "var(--primary)",
+            color: "var(--secondary)",
+          }}
+          id="my-tooltip"
+        />
         <div className="flex-grow">
           <Header />
           <CreateTask tasks={tasks} setTasks={setTasks} />

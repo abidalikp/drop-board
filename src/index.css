@@ -2,15 +2,19 @@
 @config "../tailwind.config.js";
 
 :root {
+  --pure: rgba(255, 255, 255);
   --primary: rgba(250, 250, 249);
   --secondary: rgba(28, 25, 23);
   --tertiary: rgba(41, 37, 36);
   --shadow: rgba(68, 64, 59);
+  --raw: rgba(0, 0, 0);
 }
 
 .light {
+  --pure: rgba(0, 0, 0);
   --primary: rgba(28, 25, 23);
   --secondary: rgba(250, 250, 249);
   --tertiary: rgba(245, 245, 244);
   --shadow: rgba(231, 229, 228);
+  --raw: rgba(255, 255, 255);
 }

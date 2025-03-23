@@ -1,16 +1,19 @@
 import React from "react";
-import SunIcon from "../assets/Sun";
+import SunIcon from "../../assets/Sun";
+import { IconButton } from "./Button";
 
 const ThemeToggle = (): React.ReactNode => {
   return (
-    <div
-      className="!w-10 !h-10 flex gap-2 items-center justify-center bg-secondary text-primary hover:bg-tertiary cursor-pointer border rounded-lg "
+    <IconButton
       onClick={() => {
         document.getElementById("root")?.classList.toggle("light");
       }}
+      data-tooltip-id="my-tooltip"
+      data-tooltip-content="Toggle Theme"
+      data-tooltip-place="left"
     >
       <SunIcon fill={"var(--primary)"} />
-    </div>
+    </IconButton>
   );
 };
 
